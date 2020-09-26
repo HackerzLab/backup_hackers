@@ -1,0 +1,3 @@
+#!/bin/bash
+
+mysql -uhackers -hlocalhost -pHn9~60/81x -Dhackers < "$*"; 

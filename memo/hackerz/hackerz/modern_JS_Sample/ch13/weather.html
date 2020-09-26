@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="js">
+<head>
+    <meta charset="utf-8">
+    <title>天気</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/clean.css">
+</head>
+<body>
+	<form action="#" method="get" id="theForm">
+		<p>現在の天候を調べるには、その場所のWOEIDを入力してください。</p>
+		<p><label for="zip">WOEID <input type="text" name="zip" id="zip"></label></p>
+		<p><input type="submit" value="送信"></p>
+	</form>
+ <p id="output"></p>
+<script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>
+<script>
+	YUI().use('node', 'yql', function(Y) {
+		Y.on('domready', function() {
+
+			// 必要な参照を取得
+			var zip = Y.one('#zip');
+			var output = Y.one('#output');
+
+			// フォームの送信の処理
+			Y.one('#theForm').on('submit', function(e) {
+
+				// フォームの送信を回避
+				e.preventDefault();
+
+				// 表示する文字の変更
+				output.setContent('...調べています...');
+
+				// クエリを実行
+				// アメリカの電話番号を使ったパターン
+			    //Y.YQL('select item.description from weather.forecast where location=' + zip.get('value'), function(result) {
+
+			    // WOEIDを使ったパターン
+			    Y.YQL('select item.description from weather.forecast where woeid=' + zip.get('value'), function(result) {
+					output.setContent(result.query.results.channel.item.description);
+
+			    }); // YQLの終わり
+
+			}); // フォームの送信の終わり
+
+		}); // Y.on('domready')の終わり
+	}); // YUI().use()の終わり
+</script>
+</body>
+</html>

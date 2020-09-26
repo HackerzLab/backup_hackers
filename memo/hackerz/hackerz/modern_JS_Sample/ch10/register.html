@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>登録フォーム</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/newform.css">
+</head>
+<body>
+    <!-- Script 10.6 - register.html -->
+    <!--<form action="#" method="post" id="theForm">-->
+   	<form action="#" method="post" id="theForm" novalidate>
+        <fieldset><legend>登　録</legend>
+			<p>すべて必須項目です。</p>
+			<div class="two"><label for="firstName">ファーストネーム</label><input type="text" name="firstName" id="firstName" required></div>
+			<div class="two"><label for="lastName">ラストネーム</label><input type="text" name="lastName" id="lastName" required></div>
+			<div class="two"><label for="email">メールアドレス</label><input type="email" name="email" id="email" required></div>
+			<div class="two"><label for="phone">電話番号<span class="tooltip">XXX XXX XXXX か XXX-XXX-XXXX または XXXXXXXXXXという形式で</span></label><input type="text" name="phone" id="phone" required></div>
+			<div class="two"><label for="city">都市名</label><input type="text" name="city" id="city" required></div>
+			<div class="two"><label for="state">州名</label><select name="state" id="state">
+				<option value="">州の選択</option> 
+				<option value="AL">アラバマ</option> 
+				<option value="AK">アラスカ</option> 
+				<option value="AZ">アリゾナ</option> 
+				<option value="AR">アーカンソー</option> 
+				<option value="CA">カリフォルニア</option> 
+				<option value="CO">コロラド</option>           
+			</select></div>    
+			<div class="two"><label for="zip">郵便番号</label><input type="text" name="zip" id="zip" required></div>
+			<div class="one"><input type="checkbox" name="terms" id="terms" required> わたしはこの条件に同意します。</div>
+			<div class="one"><input type="submit" value="登録" id="submit"></div>
+        </fieldset>
+    </form>
+    <script src="js/utilities.js"></script>
+    <script src="js/errorMessages.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>

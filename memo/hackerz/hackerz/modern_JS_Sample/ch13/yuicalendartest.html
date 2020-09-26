@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>YUI カレンダーテスト</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+   
+    </style>
+</head>
+<body class="yui3-skin-sam">
+	
+<script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>	
+<script>
+
+YUI().use('calendar', function (Y) {
+
+  // Create a new instance of Calendar, setting its width 
+  // and height, allowing the dates from the previous
+  // and next month to be visible and setting the initial
+  // date to be November, 1982.
+  var calendar = new Y.Calendar({
+          contentBox: "#mycalendar",
+          height:'200px',
+          width:'300px',
+          showPrevMonth: true,
+          showNextMonth: true,
+          date: new Date()}).render();
+
+});
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>YUI テスト１</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<link rel="stylesheet" href="css/clean.css">
+
+	
+
+	<style type="text/css">
+
+      #box {
+      	width:100px;
+      	height:50px;
+      	font-size: 25px; 
+      	
+      	background-color:#cccccc; 
+      }
+   
+    </style>
+</head>
+<body class="yui3-skin-sam">
+	<div id="header">ヘッダ</div>
+	<div><input type="text" name = "email" id="email" value="user01@example.com"></div>
+	 <div><input type="submit" value="ログイン &rarr;" id="submit"></div>
+	 <div><p id="somep">元のテキスト</p></div>
+	 
+	 <div id="box">ボックス</div>
+	 <div><p id="inline" style="font-size:30px;">インラインスタイル</p></div>
+	 <div><p id="setstyle" style="font-size:1em;">セットスタイル</p></div>
+
+<script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>	
+<script>
+
+YUI().use('console' ,function(Y){
+	Y.on('domready', function(){
+
+		var yconsole = new Y.Console();
+		yconsole.render();
+
+		//var header = Y.one('#header');
+		//Y.log(header);
+
+		var email = Y.one('#email');
+		var val = email.get('value');
+		Y.log(val);
+
+		// Y.log(Y.one('#email').get('value'));
+
+		//Y.one('#submit').set('disabled', 'disabled');
+		
+		// Y.one('#somep').setContent('あたらしいテキスト');
+
+		//Y.one('#box').setStyle('color','red');
+		// var s = Y.one('#box').getComputedStyle('color');
+		// Y.log(s);
+
+		//var s2 = Y.one('#box').getStyle('color');
+		//Y.log(s2);
+		
+		//Y.one('#setstyle').setStyle('fontSize','12em');
+
+	});
+});
+
+	</script>
+</body>
+</html>

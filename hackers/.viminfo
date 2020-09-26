@@ -1,0 +1,478 @@
+# この viminfo ファイルは Vim 7.4 によって生成されました.
+# 変更する際には十分注意してください!
+
+# このファイルが書かれた時の 'encoding' の値
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~H
+# 最後の 検索パターン:
+~MSle0~/upda
+
+# 最後に置換された文字列:
+$
+
+# コマンドライン 項目の履歴 (新しいものから古いものへ):
+:wq
+:qw
+:w
+:q
+:w!
+:q!
+:vim 
+:q:
+:'<,'>q
+:'<,'>
+
+# 検索文字列 項目の履歴 (新しいものから古いものへ):
+?/upda
+?/crea
+?/image
+?/for
+?/question
+?/user
+?/:user
+?/render
+?/log
+?/typeId
+?/cmp
+?/com
+
+# 式 項目の履歴 (新しいものから古いものへ):
+
+# 入力行 項目の履歴 (新しいものから古いものへ):
+
+# 入力行 項目の履歴 (新しいものから古いものへ):
+
+# レジスタ:
+"0	LINE	0
+	    <div class="form-horizontal well">
+	      <fieldset>
+	        <a href="/static/images/$json->{addfile}" class="btn btn-primary btn-lg btn-block" download="$json->{addfile}">ファイルをダウンロード<br></a>
+	      </fieldset>
+	    </div>
+"1	LINE	0
+	    <div class="form-horizontal well">
+	      <fieldset>
+	        <a href="/static/images/$json->{addfile}" class="btn btn-primary btn-lg btn-block" download="$json->{addfile}">ファイルをダウンロード<br></a>
+	      </fieldset>
+	    </div>
+"2	LINE	0
+	  </div>
+"3	LINE	0
+	  <div class="container">
+"4	LINE	0
+	  <div class="container">
+	    <div class="form-horizontal well">
+	      <fieldset>
+	        <a href="/static/images/$json->{addfile}" class="btn btn-primary btn-lg btn-block" download="$json->{addfile}">ファイルをダウンロード<br></a>
+	      </fieldset>
+	    </div>
+	  </div>
+"5	LINE	0
+	  <div class="container">
+	    <div class="form-horizontal well">
+	      <fieldset>
+	        <a href="/static/images/$json->{addfile}" class="btn btn-primary btn-lg btn-block" download="$json->{addfile}">ファイルをダウンロード<br></a>
+	      </fieldset>
+	    </div>
+	  </div>
+"6	LINE	0
+	  </div>
+"7	LINE	0
+	  <div class="container">
+"8	LINE	0
+	383
+<ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyEyelRwq5ZDpPp9RBm2KZTUrLu4eHceYB0uw9TXyLI6bAXiOO1jNp2lPn4SJryM95L9PGBJhWhIG8GYfUKz1yI3q7U0gCcWeBLpqzr/LCDfq3I7EEHBssdN/Qkrv0u/N0xuIGmmbt6OvgU+DRITnOE/VR+1Vj/d0fj/g3MyUv486VqxG7c5PEziUqDhwj7aNCd7b+fNW3nesYPn+Lfw1LZAdoOK7k+3qxB1/49dJDVKd5wkLbzKl0jwgxi2ceOqU4AEcErLrJNsbLwFKChi97ffu16dLaurEpsDoT5msX5gWi0Er8yRDdImz1cH50UucNLvX4gofiBIz8kQlMZLfr
+"9	LINE	0
+	console.dir(data);
+""-	CHAR	0
+	|
+
+# ファイルマーク:
+'0  8  53  ~/TrainingHackers/.git/config
+'1  47  7  ~/TrainingHackers/webapp/views/questions/63.tx
+'2  83  0  ~/TrainingHackers/webapp/lib/TrainingHackers/Model/Question.pm
+'3  77  28  ~/TrainingHackers/webapp/lib/TrainingHackers/Model/Question.pm
+'4  53  8  ~/TrainingHackers/webapp/views/questions/63.tx
+'5  26  28  ~/TrainingHackers/webapp/lib/TrainingHackers/Model/Question.pm
+'6  33  21  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/API/Question.pm
+'7  154  6  ~/TrainingHackers/webapp/public/static/js/question.js
+'8  48  52  ~/TrainingHackers/webapp/views/questions/65.tx
+'9  48  52  ~/TrainingHackers/webapp/views/questions/64.tx
+
+# ジャンプリスト (新しいものが先):
+-'  8  53  ~/TrainingHackers/.git/config
+-'  1  0  ~/TrainingHackers/.git/config
+-'  47  7  ~/TrainingHackers/webapp/views/questions/63.tx
+-'  53  2  ~/TrainingHackers/webapp/views/questions/63.tx
+-'  83  0  ~/TrainingHackers/webapp/lib/TrainingHackers/Model/Question.pm
+-'  77  8  ~/TrainingHackers/webapp/lib/TrainingHackers/Model/Question.pm
+-'  26  8  ~/TrainingHackers/webapp/lib/TrainingHackers/Model/Question.pm
+-'  1  0  ~/TrainingHackers/webapp/lib/TrainingHackers/Model/Question.pm
+-'  33  21  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/API/Question.pm
+-'  160  2  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/API/Question.pm
+-'  154  6  ~/TrainingHackers/webapp/public/static/js/question.js
+-'  199  6  ~/TrainingHackers/webapp/public/static/js/question.js
+-'  48  52  ~/TrainingHackers/webapp/views/questions/65.tx
+-'  1  0  ~/TrainingHackers/webapp/views/questions/65.tx
+-'  48  52  ~/TrainingHackers/webapp/views/questions/64.tx
+-'  38  8  ~/TrainingHackers/webapp/views/questions/64.tx
+-'  1  0  ~/TrainingHackers/webapp/views/questions/64.tx
+-'  54  6  ~/TrainingHackers/webapp/views/questions/63.tx
+-'  51  4  ~/TrainingHackers/webapp/views/questions/63.tx
+-'  148  9  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/API/Question.pm
+-'  165  4  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/API/Question.pm
+-'  152  8  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/API/Question.pm
+-'  16  14  ~/TrainingHackers/webapp/views/questions/63.tx
+-'  153  2  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/API/Question.pm
+-'  27  4  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/API/Question.pm
+-'  6  0  ~/TrainingHackers/webapp/views/questions/60.tx
+-'  1  0  ~/TrainingHackers/webapp/views/questions/60.tx
+-'  1  0  ~/TrainingHackers/webapp/views/questions/63.tx
+-'  7  0  ~/.ssh/authorized_keys
+-'  8  0  ~/.ssh/authorized_keys
+-'  1  0  ~/authorized_keys
+-'  3  0  ~/.ssh/authorized_keys
+-'  1  0  ~/.ssh/authorized_keys
+-'  40  0  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/API/Question.pm
+-'  197  39  ~/TrainingHackers/webapp/public/static/js/question.js
+-'  198  13  ~/TrainingHackers/webapp/public/static/js/question.js
+-'  196  22  ~/TrainingHackers/webapp/public/static/js/question.js
+-'  178  10  ~/TrainingHackers/webapp/public/static/js/question.js
+-'  1  0  ~/question.js
+-'  10  0  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/API/Question.pm
+-'  211  11  ~/TrainingHackers/webapp/views/index/index.tx
+-'  213  9  ~/TrainingHackers/webapp/views/index/index.tx
+-'  208  8  ~/TrainingHackers/webapp/views/index/index.tx
+-'  412  0  ~/TrainingHackers/webapp/views/index/index.tx
+-'  81  23  ~/TrainingHackers/webapp/views/index/index.tx
+-'  75  23  ~/TrainingHackers/webapp/views/index/index.tx
+-'  72  23  ~/TrainingHackers/webapp/views/index/index.tx
+-'  63  23  ~/TrainingHackers/webapp/views/index/index.tx
+-'  60  23  ~/TrainingHackers/webapp/views/index/index.tx
+-'  57  23  ~/TrainingHackers/webapp/views/index/index.tx
+-'  54  23  ~/TrainingHackers/webapp/views/index/index.tx
+-'  51  23  ~/TrainingHackers/webapp/views/index/index.tx
+-'  48  23  ~/TrainingHackers/webapp/views/index/index.tx
+-'  45  23  ~/TrainingHackers/webapp/views/index/index.tx
+-'  42  23  ~/TrainingHackers/webapp/views/index/index.tx
+-'  39  23  ~/TrainingHackers/webapp/views/index/index.tx
+-'  36  23  ~/TrainingHackers/webapp/views/index/index.tx
+-'  23  18  ~/TrainingHackers/webapp/views/index/index.tx
+-'  420  14  ~/TrainingHackers/webapp/views/index/index.tx
+-'  399  18  ~/TrainingHackers/webapp/views/index/index.tx
+-'  17  11  ~/TrainingHackers/webapp/views/index/index.tx
+-'  69  4  ~/TrainingHackers/webapp/views/index/index.tx
+-'  221  8  ~/TrainingHackers/webapp/views/index/index.tx
+-'  1  17  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/Index.pm
+-'  12  8  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/Index.pm
+-'  12  0  ~/TrainingHackers/webapp/app.psgi
+-'  1  0  ~/TrainingHackers/webapp/app.psgi
+-'  17  0  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/Index.pm
+-'  68  4  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/API/Question.pm
+-'  18  0  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/Index.pm
+-'  207  9  ~/TrainingHackers/webapp/views/index/index.tx
+-'  202  7  ~/TrainingHackers/webapp/views/index/index.tx
+-'  390  6  ~/TrainingHackers/webapp/views/index/index.tx
+-'  134  18  ~/TrainingHackers/webapp/lib/Spica/Controller.pm
+-'  3  12  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/API/Question.pm
+-'  37  11  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/API/Question.pm
+-'  2  0  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/API/Question.pm
+-'  22  0  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/API/Question.pm
+-'  20  4  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/API/Question.pm
+-'  14  17  ~/TrainingHackers/webapp/cpanfile
+-'  1  0  ~/TrainingHackers/webapp/cpanfile
+-'  122  4  ~/TrainingHackers/webapp/lib/Spica/Controller.pm
+-'  61  36  ~/TrainingHackers/webapp/lib/Spica/Controller.pm
+-'  60  37  ~/TrainingHackers/webapp/lib/Spica/Controller.pm
+-'  59  38  ~/TrainingHackers/webapp/lib/Spica/Controller.pm
+-'  53  4  ~/TrainingHackers/webapp/lib/Spica/Controller.pm
+-'  167  4  ~/TrainingHackers/webapp/lib/Spica/Controller.pm
+-'  1  0  ~/TrainingHackers/webapp/lib/Spica/Controller.pm
+-'  1  0  ~/TrainingHackers/webapp/lib/Spica.pm
+-'  24  4  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/API/Question.pm
+-'  12  4  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/API/Question.pm
+-'  176  0  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/API/Question.pm
+-'  131  4  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/API/Question.pm
+-'  101  4  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/API/Question.pm
+-'  2  0  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/Admin.pm
+-'  1  0  ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/Admin.pm
+-'  355  6  ~/TrainingHackers/webapp/views/index/index.tx
+
+# ファイル内マークの履歴 (新しいものから古いもの):
+
+> ~/TrainingHackers/.git/config
+	"	8	53
+	^	8	54
+	.	8	54
+	+	8	54
+
+> ~/TrainingHackers/webapp/views/questions/63.tx
+	"	47	7
+	^	48	8
+	.	48	7
+	+	39	0
+	+	51	0
+	+	56	0
+	+	51	1
+	+	53	90
+	+	53	48
+	+	50	0
+	+	46	0
+	+	47	5
+	+	48	5
+	+	49	5
+	+	48	7
+
+> ~/TrainingHackers/webapp/lib/TrainingHackers/Model/Question.pm
+	"	83	0
+	^	77	29
+	.	77	28
+	+	24	28
+	+	25	28
+	+	26	28
+	+	27	28
+	+	74	28
+	+	75	28
+	+	76	28
+	+	77	28
+
+> ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/API/Question.pm
+	"	33	21
+	.	160	0
+	+	103	116
+	+	34	0
+	+	24	29
+	+	24	3
+	+	24	0
+	+	21	29
+	+	23	3
+	+	22	23
+	+	8	4
+	+	22	50
+	+	20	22
+	+	8	9
+	+	20	0
+	+	22	0
+	+	22	0
+	+	18	0
+	+	18	0
+	+	14	0
+	+	18	0
+	+	16	29
+	+	19	0
+	+	16	43
+	+	15	8
+	+	16	34
+	+	15	7
+	+	16	41
+	+	20	38
+	+	16	57
+	+	15	0
+	+	16	0
+	+	16	29
+	+	18	0
+	+	20	46
+	+	29	30
+	+	16	59
+	+	15	3
+	+	16	3
+	+	18	3
+	+	17	7
+	+	68	0
+	+	27	33
+	+	153	0
+	+	153	0
+	+	160	38
+	+	160	0
+
+> ~/TrainingHackers/webapp/public/static/js/question.js
+	"	154	6
+	^	198	57
+	.	197	0
+	+	198	44
+	+	198	0
+	+	197	0
+
+> ~/TrainingHackers/webapp/views/questions/65.tx
+	"	48	52
+	^	48	16
+	.	48	52
+	+	48	52
+
+> ~/TrainingHackers/webapp/views/questions/64.tx
+	"	48	52
+	^	48	16
+	.	48	52
+	+	48	52
+
+> ~/TrainingHackers/webapp/views/questions/60.tx
+	"	6	0
+
+> ~/.ssh/authorized_keys
+	"	7	0
+	^	7	160
+	.	7	139
+	+	8	0
+	+	8	356
+	+	8	0
+	+	7	139
+
+> ~/authorized_keys
+	"	1	0
+
+> ~/question.js
+	"	1	0
+
+> ~/TrainingHackers/webapp/views/index/index.tx
+	"	211	11
+	^	210	91
+	.	210	90
+	+	271	0
+	+	272	78
+	+	274	0
+	+	275	78
+	+	277	0
+	+	278	78
+	+	280	0
+	+	281	78
+	+	283	0
+	+	284	78
+	+	286	0
+	+	287	78
+	+	289	0
+	+	290	78
+	+	292	0
+	+	293	78
+	+	295	0
+	+	296	78
+	+	298	0
+	+	299	78
+	+	301	0
+	+	302	78
+	+	304	0
+	+	305	78
+	+	307	0
+	+	308	78
+	+	310	0
+	+	311	78
+	+	313	0
+	+	314	78
+	+	316	0
+	+	317	78
+	+	319	0
+	+	320	78
+	+	322	0
+	+	323	78
+	+	325	0
+	+	326	78
+	+	328	0
+	+	329	78
+	+	331	0
+	+	332	78
+	+	334	0
+	+	337	0
+	+	340	0
+	+	343	0
+	+	346	0
+	+	349	0
+	+	335	78
+	+	338	78
+	+	341	78
+	+	344	78
+	+	347	78
+	+	350	78
+	+	352	0
+	+	355	0
+	+	358	0
+	+	353	78
+	+	356	78
+	+	359	29
+	+	356	29
+	+	353	29
+	+	350	29
+	+	347	29
+	+	332	29
+	+	335	29
+	+	338	29
+	+	341	29
+	+	344	29
+	+	361	0
+	+	362	78
+	+	364	0
+	+	365	78
+	+	367	0
+	+	368	78
+	+	370	0
+	+	371	78
+	+	373	0
+	+	374	78
+	+	376	0
+	+	377	78
+	+	379	0
+	+	380	78
+	+	382	0
+	+	383	78
+	+	385	0
+	+	386	78
+	+	388	0
+	+	389	78
+	+	208	20
+	+	213	0
+	+	213	12
+	+	213	3
+	+	391	0
+	+	210	86
+	+	391	0
+	+	208	22
+	+	213	0
+	+	212	1
+	+	210	90
+
+> ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/Index.pm
+	"	1	17
+	^	13	20
+	.	13	19
+	+	14	56
+	+	12	44
+	+	14	0
+	+	13	19
+
+> ~/TrainingHackers/webapp/app.psgi
+	"	12	0
+
+> ~/TrainingHackers/webapp/lib/Spica/Controller.pm
+	"	134	18
+	^	134	41
+	.	133	18
+	+	133	21
+	+	134	23
+	+	135	17
+	+	135	16
+	+	134	0
+	+	135	0
+	+	134	20
+	+	133	18
+
+> ~/TrainingHackers/webapp/cpanfile
+	"	14	17
+	^	14	18
+	.	14	17
+	+	14	17
+
+> ~/TrainingHackers/webapp/lib/Spica.pm
+	"	1	0
+
+> ~/TrainingHackers/webapp/lib/TrainingHackers/Controller/Admin.pm
+	"	2	0
+
+> ~/TrainingHackers/webapp/views/questions/50.tx
+	"	9	83
+	^	9	95
+	.	9	94
+	+	9	94
+
+> ~/TrainingHackers/webapp/views/questions/49.tx
+	"	9	0

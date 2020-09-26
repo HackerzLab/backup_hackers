@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>mondai_20170122event</title>
+      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(171, 178, 191); overflow: auto; background-color: rgb(40, 44, 52); }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(124, 135, 156); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(82, 139, 255); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(124, 135, 156); border-color: rgb(75, 83, 98); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top-width: 2px; border-top-style: dashed; border-top-color: rgb(75, 83, 98); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(75, 83, 98); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(58, 63, 75); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(49, 54, 63); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(75, 83, 98) rgb(75, 83, 98) rgb(62, 68, 81); background-color: rgb(58, 63, 75); }
+.markdown-preview[data-use-github-style] { font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); overflow: scroll; background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; border: 0px none; background-color: rgb(231, 231, 231); }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left-width: 4px; border-left-style: solid; border-left-color: rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157); }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; border-radius: 3px; background-color: rgb(247, 247, 247); }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; border-style: solid; border-width: 1px; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .horizontal-scrollbar { visibility: visible; }
+.markdown-preview { font-family: Meiryo, 'Hiragino Kaku Gothic Pro', 'MS PGothic', Verdana, sans-serif; }
+.markdown-preview * { font-family: Meiryo; }
+.markdown-preview { max-width: 900px; margin: 0px auto; padding: 25px; color: rgb(40, 44, 52); }
+.markdown-preview hr { margin: 50px 0px; background-color: transparent; }
+.markdown-preview hr::after { content: ""; display: block; border-top-style: ridge; }
+.markdown-preview hr.pb { page-break-after: always; }
+.markdown-preview hr.pb::after { display: none; }
+.markdown-preview h1, .markdown-preview h2, .markdown-preview h3, .markdown-preview h4, .markdown-preview h5 { font-weight: normal; border-color: rgb(160, 151, 151); }
+.markdown-preview h1 { font-size: 32px; border: none; margin: 30px auto; letter-spacing: 5px; }
+.markdown-preview h2 { font-size: 25px; letter-spacing: 3px; margin: 50px auto 25px; }
+.markdown-preview h3 { font-size: 18px; font-weight: bold; margin-bottom: 10px; }
+.markdown-preview p, .markdown-preview table, .markdown-preview ul, .markdown-preview ol, .markdown-preview dl, .markdown-preview pre, .markdown-preview blockquote { margin-left: 25px; }
+.markdown-preview p ul, .markdown-preview table ul, .markdown-preview ul ul, .markdown-preview ol ul, .markdown-preview dl ul, .markdown-preview pre ul, .markdown-preview blockquote ul, .markdown-preview p ol, .markdown-preview table ol, .markdown-preview ul ol, .markdown-preview ol ol, .markdown-preview dl ol, .markdown-preview pre ol, .markdown-preview blockquote ol, .markdown-preview p dl, .markdown-preview table dl, .markdown-preview ul dl, .markdown-preview ol dl, .markdown-preview dl dl, .markdown-preview pre dl, .markdown-preview blockquote dl { margin-left: 0px; }
+.markdown-preview table { border-collapse: collapse; border-spacing: 0px; max-width: 800px; }
+.markdown-preview table th { text-align: center; border-color: rgb(160, 151, 151); background-color: rgb(238, 238, 238); }
+.markdown-preview table tr { border-top-color: rgb(102, 102, 102); }
+.markdown-preview table td { border-color: rgb(160, 151, 151); }
+.markdown-preview .margin-clear { margin-left: 0px; }
+.markdown-preview .center { text-align: center; }
+.markdown-preview .right { text-align: right; }
+.markdown-preview { font-family: Meiryo, 'Hiragino Kaku Gothic Pro', 'MS PGothic', Verdana, sans-serif; }
+.markdown-preview * { font-family: Meiryo, 'Hiragino Kaku Gothic Pro', 'MS PGothic', Verdana, sans-serif; }
+.markdown-preview table { margin: 1em 0px; border-left-style: solid; border-left-width: 1px; border-left-color: rgb(230, 230, 230); border-top-style: solid; border-top-width: 1px; border-top-color: rgb(230, 230, 230); border-collapse: collapse; }
+.markdown-preview td, .markdown-preview th { border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: rgb(160, 151, 151); border-right-style: solid; border-right-width: 1px; border-right-color: rgb(160, 151, 151); padding: 8px 10px; word-wrap: break-word; }
+.markdown-preview thead td, .markdown-preview th { font-weight: 700; background-color: rgb(197, 200, 206); }
+.markdown-preview tbody:nth-child(2n+1) tr { background-color: rgba(0, 0, 0, 0.027451); }
+.markdown-preview h2 { padding-bottom: 0.3em; line-height: 1.225; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(213, 213, 213); font-size: 1.6em; font-weight: normal; }
+.markdown-preview h2, .markdown-preview h3, .markdown-preview h4, .markdown-preview h5, .markdown-preview h6 { line-height: 1.4; margin: 1.35em 0px 0.7em; }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { color: rgb(255, 0, 0); }
+.ftpconfig_line_error {
+  background: rgba(255, 0, 0, 0.5) !important;
+}
+
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+pre.editor-colors,
+.host {
+  background-color: #282c34;
+  color: #abb2bf;
+}
+pre.editor-colors .line.cursor-line,
+.host .line.cursor-line {
+  background-color: rgba(153, 187, 255, 0.04);
+}
+pre.editor-colors .invisible,
+.host .invisible {
+  color: #abb2bf;
+}
+pre.editor-colors .cursor,
+.host .cursor {
+  border-left: 2px solid #528bff;
+}
+pre.editor-colors .selection .region,
+.host .selection .region {
+  background-color: #3e4451;
+}
+pre.editor-colors .bracket-matcher .region,
+.host .bracket-matcher .region {
+  border-bottom: 1px solid #528bff;
+  box-sizing: border-box;
+}
+pre.editor-colors .invisible-character,
+.host .invisible-character {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .indent-guide,
+.host .indent-guide {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .wrap-guide,
+.host .wrap-guide {
+  background-color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .find-result .region.region.region,
+.host .find-result .region.region.region,
+pre.editor-colors .current-result .region.region.region,
+.host .current-result .region.region.region {
+  border-radius: 0px;
+  background-color: rgba(82, 139, 255, 0.24);
+  transition: border-color 0.4s;
+}
+pre.editor-colors .find-result .region.region.region,
+.host .find-result .region.region.region {
+  border: 2px solid transparent;
+}
+pre.editor-colors .current-result .region.region.region,
+.host .current-result .region.region.region {
+  border: 2px solid #528bff;
+  transition-duration: .1s;
+}
+pre.editor-colors .gutter .line-number,
+.host .gutter .line-number {
+  color: #636d83;
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.cursor-line,
+.host .gutter .line-number.cursor-line {
+  color: #abb2bf;
+  background-color: #2c313a;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection,
+.host .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+pre.editor-colors .gutter .line-number .icon-right,
+.host .gutter .line-number .icon-right {
+  color: #abb2bf;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before,
+.host .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
+  bottom: -3px;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after,
+.host .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
+  pointer-events: none;
+}
+pre.editor-colors .gutter .line-number.folded,
+.host .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+.host .gutter .line-number:after,
+pre.editor-colors .fold-marker:after,
+.host .fold-marker:after {
+  color: #abb2bf;
+}
+.comment {
+  color: #5c6370;
+  font-style: italic;
+}
+.comment .markup.link {
+  color: #5c6370;
+}
+.entity.name.type {
+  color: #e5c07b;
+}
+.entity.other.inherited-class {
+  color: #98c379;
+}
+.keyword {
+  color: #c678dd;
+}
+.keyword.control {
+  color: #c678dd;
+}
+.keyword.operator {
+  color: #abb2bf;
+}
+.keyword.other.special-method {
+  color: #61afef;
+}
+.keyword.other.unit {
+  color: #d19a66;
+}
+.storage {
+  color: #c678dd;
+}
+.storage.type.annotation,
+.storage.type.primitive {
+  color: #c678dd;
+}
+.storage.modifier.package,
+.storage.modifier.import {
+  color: #abb2bf;
+}
+.constant {
+  color: #d19a66;
+}
+.constant.variable {
+  color: #d19a66;
+}
+.constant.character.escape {
+  color: #56b6c2;
+}
+.constant.numeric {
+  color: #d19a66;
+}
+.constant.other.color {
+  color: #56b6c2;
+}
+.constant.other.symbol {
+  color: #56b6c2;
+}
+.variable {
+  color: #e06c75;
+}
+.variable.interpolation {
+  color: #be5046;
+}
+.variable.parameter {
+  color: #abb2bf;
+}
+.string {
+  color: #98c379;
+}
+.string.regexp {
+  color: #56b6c2;
+}
+.string.regexp .source.ruby.embedded {
+  color: #e5c07b;
+}
+.string.other.link {
+  color: #e06c75;
+}
+.punctuation.definition.comment {
+  color: #5c6370;
+}
+.punctuation.definition.method-parameters,
+.punctuation.definition.function-parameters,
+.punctuation.definition.parameters,
+.punctuation.definition.separator,
+.punctuation.definition.seperator,
+.punctuation.definition.array {
+  color: #abb2bf;
+}
+.punctuation.definition.heading,
+.punctuation.definition.identity {
+  color: #61afef;
+}
+.punctuation.definition.bold {
+  color: #e5c07b;
+  font-weight: bold;
+}
+.punctuation.definition.italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.punctuation.section.embedded {
+  color: #be5046;
+}
+.punctuation.section.method,
+.punctuation.section.class,
+.punctuation.section.inner-class {
+  color: #abb2bf;
+}
+.support.class {
+  color: #e5c07b;
+}
+.support.type {
+  color: #56b6c2;
+}
+.support.function {
+  color: #56b6c2;
+}
+.support.function.any-method {
+  color: #61afef;
+}
+.entity.name.function {
+  color: #61afef;
+}
+.entity.name.class,
+.entity.name.type.class {
+  color: #e5c07b;
+}
+.entity.name.section {
+  color: #61afef;
+}
+.entity.name.tag {
+  color: #e06c75;
+}
+.entity.other.attribute-name {
+  color: #d19a66;
+}
+.entity.other.attribute-name.id {
+  color: #61afef;
+}
+.meta.class {
+  color: #e5c07b;
+}
+.meta.class.body {
+  color: #abb2bf;
+}
+.meta.method-call,
+.meta.method {
+  color: #abb2bf;
+}
+.meta.definition.variable {
+  color: #e06c75;
+}
+.meta.link {
+  color: #d19a66;
+}
+.meta.require {
+  color: #61afef;
+}
+.meta.selector {
+  color: #c678dd;
+}
+.meta.separator {
+  background-color: #373b41;
+  color: #abb2bf;
+}
+.meta.tag {
+  color: #abb2bf;
+}
+.underline {
+  text-decoration: underline;
+}
+.none {
+  color: #abb2bf;
+}
+.invalid.deprecated {
+  color: #523d14 !important;
+  background-color: #e0c285 !important;
+}
+.invalid.illegal {
+  color: #ffffff !important;
+  background-color: #e05252 !important;
+}
+.markup.bold {
+  color: #d19a66;
+  font-weight: bold;
+}
+.markup.changed {
+  color: #c678dd;
+}
+.markup.deleted {
+  color: #e06c75;
+}
+.markup.italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.markup.heading {
+  color: #e06c75;
+}
+.markup.heading .punctuation.definition.heading {
+  color: #61afef;
+}
+.markup.link {
+  color: #c678dd;
+}
+.markup.inserted {
+  color: #98c379;
+}
+.markup.quote {
+  color: #d19a66;
+}
+.markup.raw {
+  color: #98c379;
+}
+.source.cs .keyword.operator {
+  color: #c678dd;
+}
+.source.css .property-name,
+.source.css .property-value {
+  color: #828997;
+}
+.source.css .property-name.support,
+.source.css .property-value.support {
+  color: #abb2bf;
+}
+.source.gfm .markup {
+  -webkit-font-smoothing: auto;
+}
+.source.gfm .link .entity {
+  color: #61afef;
+}
+.source.go .storage.type.string {
+  color: #c678dd;
+}
+.source.ini .keyword.other.definition.ini {
+  color: #e06c75;
+}
+.source.java .storage.modifier.import {
+  color: #e5c07b;
+}
+.source.java .storage.type {
+  color: #e5c07b;
+}
+.source.java .keyword.operator.instanceof {
+  color: #c678dd;
+}
+.source.java-properties .meta.key-pair {
+  color: #e06c75;
+}
+.source.java-properties .meta.key-pair > .punctuation {
+  color: #abb2bf;
+}
+.source.js .keyword.operator {
+  color: #56b6c2;
+}
+.source.js .keyword.operator.delete,
+.source.js .keyword.operator.in,
+.source.js .keyword.operator.of,
+.source.js .keyword.operator.instanceof,
+.source.js .keyword.operator.new,
+.source.js .keyword.operator.typeof,
+.source.js .keyword.operator.void {
+  color: #c678dd;
+}
+.source.json .meta.structure.dictionary.json > .string.quoted.json {
+  color: #e06c75;
+}
+.source.json .meta.structure.dictionary.json > .string.quoted.json > .punctuation.string {
+  color: #e06c75;
+}
+.source.json .meta.structure.dictionary.json > .value.json > .string.quoted.json,
+.source.json .meta.structure.array.json > .value.json > .string.quoted.json,
+.source.json .meta.structure.dictionary.json > .value.json > .string.quoted.json > .punctuation,
+.source.json .meta.structure.array.json > .value.json > .string.quoted.json > .punctuation {
+  color: #98c379;
+}
+.source.json .meta.structure.dictionary.json > .constant.language.json,
+.source.json .meta.structure.array.json > .constant.language.json {
+  color: #56b6c2;
+}
+.source.ruby .constant.other.symbol > .punctuation {
+  color: inherit;
+}
+.source.python .keyword.operator.logical.python {
+  color: #c678dd;
+}
+.source.python .variable.parameter {
+  color: #d19a66;
+}
+</style>
+  </head>
+  <body class='markdown-preview' data-use-github-style><h1 id="hackerzlab-">HackerzLab.博多 第８回勉強会</h1>
+<h2 id="-">日時</h2>
+<p>2017/01/22 13時？</p>
+<h2 id="-8-">第8回ハッカークイズ問題</h2>
+<h3 id="-">各レベルの問題数</h3>
+<ul>
+<li>レベル1相当：2問</li>
+<li>レベル2相当：1問</li>
+<li>レベル3相当：3問</li>
+<li>レベル4相当：3問</li>
+<li>レベル5相当：1問</li>
+</ul>
+<h3 id="-">問題概要</h3>
+<ul>
+<li>問1(レベル1)：豆知識</li>
+<li>問2(レベル1)：簡単な暗号を解いてみよう</li>
+<li>問3(レベル2)：写真に写っているお店の名前は？</li>
+<li>問4(レベル3)：ファイルの行数をカウントしてみよう</li>
+<li>問5(レベル3)：WebサーバーのIPアドレスを調べよう</li>
+<li>問6(レベル3)：Webサーバーを稼働しているホスティング・クラウド事業者は？</li>
+<li>問7(レベル4)：WebサーバーのOSを調べよう</li>
+<li>問8(レベル4)：特定のネットワークからのアクセスを防いでみよう</li>
+<li>問9(レベル4)：パケットダンプファイルの解析をしてみよう</li>
+<li>問10(レベル5)：パケットダンプファイルからデータを抽出してみよう</li>
+</ul>
+<hr>
+<h2 id="-">以下問題です。</h2>
+<h3 id="-1">問題1</h3>
+<h4 id="-">レベル</h4>
+<p>レベル1</p>
+<h4 id="-">タイトル</h4>
+<p>豆知識</p>
+<h4 id="-">問題内容</h4>
+<p>あなたは文字が消せるボールペンで書かれたメモを発見しました。<br>しかし既に消されていて文字が読めません。これを復元する方法は次のうちどれでしょう。</p>
+<ul>
+<li>A：メモを燃やす</li>
+<li>B：メモを水につける</li>
+<li>C：メモを冷凍庫に入れる</li>
+<li>D：メモを牛乳につける</li>
+</ul>
+<h4 id="-">問題区分</h4>
+<p>選択式</p>
+<h4 id="-">正答</h4>
+<p>C</p>
+<h4 id="-">添付ファイル</h4>
+<h4 id="-">ヒント</h4>
+<ol>
+<li>燃やすと復元できないです</li>
+<li>牛乳につけても意味はありません</li>
+<li>文字が消せるボールペンのインクは温度が一定以上になれば無色に変化します</li>
+<li>熱して無色になるのなら逆に冷まそう</li>
+<li>水につけるだけでは元に戻りません</li>
+</ol>
+<h4 id="-">解説</h4>
+<p>このタイプのボールペンは熱をあたえて(摩擦熱)、<br>一程の温度以上になると無色になります。<br>無色になった状態から逆に冷ますと文字が(読めるくらいに)復元します。</p>
+<hr>
+<h3 id="-2">問題2</h3>
+<h4 id="-">レベル</h4>
+<p>1</p>
+<h4 id="-">タイトル</h4>
+<p>簡単な暗号を解いてみよう</p>
+<h4 id="-">問題内容</h4>
+<p>次の暗号文を解読した結果をひらがなで入力してください。  </p>
+<p>fklvklnlkdwlndudqdul</p>
+<h4 id="-">問題区分</h4>
+<p>記述式</p>
+<h4 id="-">正答</h4>
+<p>ちしきはちからなり</p>
+<h4 id="-">添付ファイル</h4>
+<h4 id="-">ヒント</h4>
+<ol>
+<li>古代ローマ時代からあった暗号方式です</li>
+<li>シーザー暗号と呼ばれるのが有名です</li>
+<li>シーザ暗号はアルファベットを数文字ずらします</li>
+<li>力技で暗号文のアルファベットを一文字ずつずらしていくのも一つの手段</li>
+<li>ネットで使える解読ツール <a href="http://ango.satoru.net/">http://ango.satoru.net/</a></li>
+</ol>
+<h4 id="-">解説</h4>
+<p>力技で一文字ずつずらすのも良いですが、時間がかかって面倒ですね。<br>そんな時はネットで「シーザー暗号　解読　ツール」などのキーワードで探してみる方が早く解決できます。</p>
+<hr>
+<h3 id="-3">問題3</h3>
+<h4 id="-">レベル</h4>
+<p>レベル2</p>
+<h4 id="-">タイトル</h4>
+<p>写真に写っているお店の名前は？</p>
+<h4 id="-">問題内容</h4>
+<p>次の画像は、「ウエスト○○店」です。○○に入る店名を答えてください。</p>
+<h4 id="-">問題区分</h4>
+<p>記述式</p>
+<h4 id="-">正答</h4>
+<p>和白</p>
+<h4 id="-">添付ファイル</h4>
+<p>HLH_20170122_01.jpg</p>
+<h4 id="-">ヒント</h4>
+<ol>
+<li>画像を見てもヒントとなる建物はなさげ</li>
+<li>HTMLソースを見てもtitleなどにヒントはなさげ</li>
+<li>画像をダウンロードしてみよう</li>
+<li>画像にはExif情報と呼ばれるものが埋め込まれている場合があります。</li>
+<li>画像のExif情報を確認する方法をネットで探してみよう。</li>
+</ol>
+<h4 id="-">解説</h4>
+<p>画像のExif情報をもとに店名を探す問題です。<br>Exif情報にはカメラの情報が埋め込まれている場合があります。<br>カメラの情報以外にGPS情報(緯度経度)も含まれる場合があります。<br><a href="http://exif-check.org/">http://exif-check.org/</a></p>
+<p>緯度経度(北緯33度41分32.718秒、東経130度26分4.14秒)を検索してみよう。<br><a href="http://earthjp.net/maps/">http://earthjp.net/maps/</a>  </p>
+<hr>
+<h3 id="-4">問題4</h3>
+<h4 id="-">レベル</h4>
+<p>3</p>
+<h4 id="-">タイトル</h4>
+<p>ファイルの行数をカウントしてみよう</p>
+<h4 id="-">問題内容</h4>
+<p>次のファイルは何行あるでしょう。<br>ただし、空の行(文字が書かれてない行)はカウント対象に含めません。</p>
+<h4 id="-">問題区分</h4>
+<p>記述式</p>
+<h4 id="-">正答</h4>
+<p>8946</p>
+<h4 id="-">添付ファイル</h4>
+<p>HLH_20170122_02.txt</p>
+<h4 id="-">ヒント</h4>
+<ol>
+<li>エディタでファイル開き、目視で確認するのも一つの手段だけど超大変</li>
+<li>ファイルの行数をカウントするコマンドがあります</li>
+<li>空の行を除外してカウントできれば・・・</li>
+<li>複数のコマンドはパイプ「|」で連結することができます</li>
+<li>コマンドにはいろいろなオプションが用意されています</li>
+</ol>
+<h4 id="-">解説</h4>
+<p>UNIXコマンドを使いこなす問題です。</p>
+<p>UNIXコマンドでファイルの行数をカウント</p>
+<pre class="editor-colors lang-sh"><div class="line"><span class="source shell"><span>cat&nbsp;ファイル名&nbsp;</span><span class="keyword operator pipe shell"><span>|</span></span><span>&nbsp;wc&nbsp;-l</span></span></div></pre>
+<p>総行数をカウントするなら上記のコマンドやエディタでファイルを開けば確認できますが、この問題では空行はカウントから除外する必要があります。</p>
+<p>空行を除外する場合は以下のコマンドでカウントすることができます。</p>
+<pre class="editor-colors lang-sh"><div class="line"><span class="source shell"><span>grep&nbsp;-v&nbsp;-e&nbsp;</span><span class="string quoted single shell"><span class="punctuation definition string begin shell"><span>&#39;</span></span><span>^\s*$</span><span class="punctuation definition string end shell"><span>&#39;</span></span></span><span>&nbsp;ファイル名&nbsp;</span><span class="keyword operator pipe shell"><span>|</span></span><span>&nbsp;wc&nbsp;-l</span></span></div></pre>
+<p>もしくはこれでカウントできる場合もあります。</p>
+<pre class="editor-colors lang-sh"><div class="line"><span class="source shell"><span>cat&nbsp;ファイル名&nbsp;</span><span class="keyword operator pipe shell"><span>|</span></span><span>&nbsp;grep&nbsp;-c&nbsp;</span><span class="string quoted double shell"><span class="punctuation definition string begin shell"><span>&quot;</span></span><span class="punctuation definition string end shell"><span>&quot;</span></span></span></span></div></pre>
+<hr>
+<h3 id="-5">問題5</h3>
+<h4 id="-">レベル</h4>
+<p>3</p>
+<h4 id="-">タイトル</h4>
+<p>WebサーバーのIPアドレスを調べよう</p>
+<h4 id="-">問題内容</h4>
+<p>以下のURLのWebサイトが稼働しているサーバーのIPアドレスを入力してください。</p>
+<p><a href="http://hackers.jpn.org/">http://hackers.jpn.org/</a></p>
+<h4 id="-">問題区分</h4>
+<p>記述式</p>
+<h4 id="-">正答</h4>
+<p>219.94.192.72</p>
+<h4 id="-">添付ファイル</h4>
+<h4 id="-">ヒント</h4>
+<h4 id="-">解説</h4>
+<p>IPアドレスを特定する方法はいくつかあります。</p>
+<p>nslookupコマンド
+digコマンド、
+ブラウザの開発ツール</p>
+<hr>
+<h3 id="-6">問題6</h3>
+<h4 id="-">レベル</h4>
+<p>3</p>
+<h4 id="-">タイトル</h4>
+<p>Webサーバーを稼働しているホスティング・クラウド事業者は？</p>
+<h4 id="-">問題内容</h4>
+<p>以下のURLのWebサイトが稼働しているサーバーのホスティング・クラウド事業者は次のうちどれでしょう。  </p>
+<ul>
+<li>A：GMOクラウド</li>
+<li>B：Heroku</li>
+<li>C：Amazon AWS</li>
+<li>D：さくらインターネット</li>
+</ul>
+<h4 id="-">問題区分</h4>
+<p>選択式</p>
+<h4 id="-">正答</h4>
+<p>D</p>
+<h4 id="-">添付ファイル</h4>
+<h4 id="-">ヒント</h4>
+<h4 id="-">解説</h4>
+<p>Webサーバーの事業者を調べるには・・・</p>
+<hr>
+<h3 id="-7">問題7</h3>
+<h4 id="-">レベル</h4>
+<p>4</p>
+<h4 id="-">タイトル</h4>
+<p>WebサーバーのOSを調べよう</p>
+<h4 id="-">問題内容</h4>
+<p>以下のURLのWebサイトが稼働しているサーバーのOSを入力してください。</p>
+<p><a href="http://hackers.jpn.org/">http://hackers.jpn.org/</a></p>
+<ul>
+<li>A：Windows Server 2008</li>
+<li>B：CentOS</li>
+<li>C：FreeBSD</li>
+<li>D：Ubuntu Server</li>
+</ul>
+<h4 id="-">問題区分</h4>
+<p>選択式</p>
+<h4 id="-">正答</h4>
+<p>B</p>
+<h4 id="-">添付ファイル</h4>
+<h4 id="-">ヒント</h4>
+<h4 id="-">解説</h4>
+<p>WebサーバーのOSを調べるには、・・・・</p>
+<hr>
+<h3 id="-8">問題8</h3>
+<h4 id="-">レベル</h4>
+<p>4</p>
+<h4 id="-">タイトル</h4>
+<p>特定のネットワークからのアクセスを防いでみよう</p>
+<h4 id="-">問題内容</h4>
+<p>あなたが管理しているWebサイトに次のIPアドレスから不正アクセスがあったとします。  </p>
+<p>219.94.192.72  </p>
+<p>あなたは、このサーバーが所属するネットワークからの全てのアクセスを遮断させたいので、<br>.htaccessの内容を確認したところ以下の設定になっていました。  </p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>order&nbsp;allow,deny</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>allow&nbsp;from&nbsp;all</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>deny&nbsp;from&nbsp;125.64.0.0/13</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>deny&nbsp;from&nbsp;82.238.88.0/22</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>deny&nbsp;from&nbsp;62.210.128.0/17</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>deny&nbsp;from&nbsp;191.96.249.0/24</span></span></span></div></pre><p>この設定に1行だけ追加してアクセスを遮断するには、どのような設定を追加すればよいでしょうか？
+設定内容を入力してください。</p>
+<h4 id="-">問題区分</h4>
+<p>記述式</p>
+<h4 id="-">正答</h4>
+<p>deny from 219.94.192.0/24</p>
+<h4 id="-">添付ファイル</h4>
+<h4 id="-">ヒント</h4>
+<h4 id="-">解説</h4>
+<p>このサーバーが所属するネットワークはさくらインターネットです。<br>ネットワークやISP事業者を探す場合は、whoisコマンドを使いましょう。  </p>
+<p>whois [調べたいIPアドレス]</p>
+<p>以下のような記述が結果に表示されます。  </p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>〜&nbsp;省略&nbsp;〜</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>inetnum:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;219.94.192.0&nbsp;-&nbsp;219.94.192.255</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>netname:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SAKURA-NET</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>descr:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SAKURA&nbsp;Internet&nbsp;Inc.</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>〜&nbsp;省略&nbsp;〜</span></span></span></div></pre><p>ネットワークの範囲は「219.94.192.0 - 219.94.192.255」になります。
+IPアドレスを範囲を.htaccessファイルに記述するときはCIDR形式で記述します。</p>
+<p>「219.94.192.0 - 219.94.192.255」をCIDR形式に直すと、<br>「219.94.192.0/24」となります。</p>
+<hr>
+<h3 id="-9">問題9</h3>
+<h4 id="-">レベル</h4>
+<p>4</p>
+<h4 id="-">タイトル</h4>
+<p>パケットダンプファイルの解析をしてみよう</p>
+<h4 id="-">問題内容</h4>
+<p>添付のパケットダンプファイルはあるWebサーバとの通信をキャプチャしたものです。<br>このWebサイトのタイトルを入力してください。  </p>
+<h4 id="-">問題区分</h4>
+<p>記述式</p>
+<h4 id="-">正答</h4>
+<p><title>Hackerz Lab.博多</title>
+もしくは
+Hackerz Lab.博多</p>
+<h4 id="-">添付ファイル</h4>
+<p>219_94_192_72_top.pcapng</p>
+<h4 id="-">ヒント</h4>
+<h4 id="-">解説</h4>
+<p>パケットとはネットワークを流れるデータの単位やデータのことをさしてパケットと呼んだりします。<br>ダンプファイルとは、データをそのまま出力することをダンプや、ファイルに出力したものをダンプファイルと呼んだりします。  </p>
+<p>ネットワークのデータのやりとりやパケットの解析するツールはたくさんありますが、<br>有名なものがWireSharkです。<br>このツールを使って添付ファイルのパケットダンプファイルを読み込み解析してきましょう。</p>
+<hr>
+<h3 id="-10">問題10</h3>
+<h4 id="-">レベル</h4>
+<p>5</p>
+<h4 id="-">タイトル</h4>
+<p>パケットダンプファイルからデータを抽出してみよう</p>
+<h4 id="-">問題内容</h4>
+<p>添付のパケットダンプファイルはあるWebサーバとの通信をキャプチャしたものです。<br>このキャプチャからjpgファイルを探して復元し、
+画像ファイルの中央に書かれている白い文字を入力してください。</p>
+<h4 id="-">問題区分</h4>
+<p>記述式</p>
+<h4 id="-">正答</h4>
+<p>ホワイトハッカー養成所 HackerzLab.博多
+もしくは
+ホワイトハッカー養成所HackerzLab.博多
+もしくは
+HackerzLab.博多</p>
+<h4 id="-">添付ファイル</h4>
+<p>219_94_192_72_top_2.pcapng</p>
+<h4 id="-">ヒント</h4>
+<h4 id="-">解説</h4>
+<hr>
+<h3 id="-">問題</h3>
+<h4 id="-">レベル</h4>
+<h4 id="-">タイトル</h4>
+<h4 id="-">問題内容</h4>
+<h4 id="-">問題区分</h4>
+<h4 id="-">正答</h4>
+<h4 id="-">添付ファイル</h4>
+<h4 id="-">ヒント</h4>
+<h4 id="-">解説</h4>
+<hr>
+<h2 id="-">ハッカークイズのレベルわけ</h2>
+<p>だいたいこんな感じ。  </p>
+<ul>
+<li>LEVEL１（初心者向け　非エンジニア）<ul>
+<li>ネットで調べ物(検索)ができる</li>
+</ul>
+</li>
+<li>LEVEL2（中級者向け　SE・プログラマ経験者）<ul>
+<li>ターミナルやコマンドプロンプト（真っ黒画面）をつかったことがある</li>
+<li>Unix/Linuxを使ったことがある</li>
+<li>データベース(SQL)を使ったことがある</li>
+<li>Web系の開発をしたことがある</li>
+</ul>
+</li>
+<li>LEVEL3（中級者向け② 　現役エンジニア向け）<ul>
+<li>HTTPのシーケンスがわかる</li>
+<li>ネットワークコマンドがある程度わかる</li>
+<li>OS(Linux/Unix)のコマンドがある程度わかる</li>
+<li>WebサーバやDBサーバの構築をしたことがある</li>
+<li>ルータの設定をしたことがある</li>
+</ul>
+</li>
+<li>LEVEL4（上級者向け 　わりとガチな人向け）<ul>
+<li>普段からシステムの保守管理をやっている</li>
+<li>ネットワークコマンドやOSのコマンドを普段から使っている</li>
+<li>XSS,OSコマンドインジェクションがわかる</li>
+<li>バイナリエディタを使ったことがある</li>
+<li>GUIなんかよりCUIだろの人</li>
+<li>Metasploitやハニーポット勉強中の人</li>
+<li>セキュリティベンダやコミュニティのツイートをマメにチェックしている人</li>
+<li>セキュリティ関連のIT記事をかかさずチェックしている人</li>
+</ul>
+</li>
+<li>LEVEL5（超上級者向け 　本当に好きな人向け）<ul>
+<li>CTFをやっていますの人</li>
+<li>Metasploit普段から使っている人</li>
+<li>迷惑メールで添付ファイルが付いていると喜ぶ人</li>
+<li>ハニーポットでウハウハする人</li>
+<li>攻撃コードやマルウェアを手に入れてマジ解析している人</li>
+<li>実際やってる人</li>
+</ul>
+</li>
+</ul>
+<p>レベル4はセキュリティ系に興味のある人向け。<br>レベル5は完全にガチな人向けの問題。</p></body>
+</html>

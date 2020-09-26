@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/hackers/TrainingHackers/webapp/views/index'
+let g:netrw_dirhist_2='/home/hackers/TrainingHackers/webapp/lib'
+let g:netrw_dirhist_3='/home/hackers/TrainingHackers/webapp/lib/TrainingHackers'
+let g:netrw_dirhist_4='/home/hackers/TrainingHackers/webapp/lib/TrainingHackers/Controller'
+let g:netrw_dirhist_5='/home/hackers/TrainingHackers/webapp/lib'
+let g:netrw_dirhist_6='/home/hackers/TrainingHackers/webapp/lib/TrainingHackers'
+let g:netrw_dirhist_7='/home/hackers/TrainingHackers/webapp/lib/TrainingHackers/Controller'
+let g:netrw_dirhist_8='/home/hackers/TrainingHackers/webapp/views/inc/answers'

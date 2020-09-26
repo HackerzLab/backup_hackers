@@ -1,0 +1,4 @@
+truncate answers;
+truncate users;
+truncate sessions;
+truncate scores;

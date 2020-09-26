@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery UIテスト</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+   <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/cupertino/jquery-ui.css" rel="stylesheet" />
+</head>
+<body>
+	<div><input type="text" name="dateinput1" id="dateinput1"></div>
+	<div><input type="text" name="dateinput2" id="dateinput2"></div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="ui/i18n/jquery.ui.datepicker-ja.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('#dateinput1').datepicker();
+
+		$('#dateinput2').autocomplete({
+			source:['Afghanistan', 'Albania', 'Algeria']
+		});
+
+	});
+	</script>
+</body>
+</html>

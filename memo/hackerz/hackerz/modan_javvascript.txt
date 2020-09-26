@@ -1,0 +1,5 @@
+オライリー　モダンJavaScript
+http://www.oreilly.co.jp/books/9784873116051/
+
+関連ファイル > サンプルコードをダウンロード
+modern_JS_Sample.zip

@@ -1,0 +1,65 @@
+cpanm (App::cpanminus) 1.7039 on perl 5.022001 built for x86_64-linux
+Work directory is /home/hackers/.cpanm/work/1514998383.26515
+You have make /usr/bin/make
+You have /usr/bin/wget
+You have /bin/tar: tar (GNU tar) 1.23
+Copyright (C) 2010 Free Software Foundation, Inc.
+使用許諾 GPLv3+: GNU GPL version 3 またはそれ以降 <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+[参考訳]
+これはフリーソフトウェアです. 変更と再配布は自由です.
+法律で認められる範囲で「無保証」です.
+
+作者: John Gilmore, Jay Fenlason.
+You have /usr/bin/unzip
+--> Working on /home/hackers/TrainingHackers/webapp/
+Entering /home/hackers/TrainingHackers/webapp
+Configuring /home/hackers/TrainingHackers/webapp
+-> OK
+Checking if you have JavaScript::Value::Escape 0 ... No
+Checking if you have DBD::mysql 0 ... Yes (4.033)
+Checking if you have Starlet 0 ... Yes (0.28)
+Checking if you have Router::Boom 0 ... Yes (1.02)
+Checking if you have Sub::Data::Recursive 0 ... Yes (0.01)
+Checking if you have Log::Dispatch 0 ... Yes (2.53)
+Checking if you have Server::Starter 0 ... Yes (0.32)
+Checking if you have HTML::FillInForm::Lite 0 ... Yes (1.13)
+Checking if you have Plack::Middleware::LogErrors 0 ... Yes (0.002)
+Checking if you have Plack 0 ... Yes (1.0039)
+Checking if you have Plack::Middleware::ReverseProxy 0 ... Yes (0.15)
+Checking if you have DBIx::Sunny 0 ... Yes (0.22)
+Checking if you have Text::Xslate 0 ... Yes (3.3.9)
+==> Found dependencies: JavaScript::Value::Escape
+Searching JavaScript::Value::Escape on mirror index /home/hackers/TrainingHackers/webapp/local/cache/modules/02packages.details.txt ...
+Searching JavaScript::Value::Escape (0) on cpanmetadb ...
+--> Working on JavaScript::Value::Escape
+Fetching http://cpan.metacpan.org/authors/id/K/KA/KAZEBURO/JavaScript-Value-Escape-0.07.tar.gz
+-> OK
+Unpacking JavaScript-Value-Escape-0.07.tar.gz
+Copying JavaScript-Value-Escape-0.07.tar.gz to /home/hackers/TrainingHackers/webapp/local/cache/authors/id/K/KA/KAZEBURO/JavaScript-Value-Escape-0.07.tar.gz
+Entering JavaScript-Value-Escape-0.07
+Checking configure dependencies from META.json
+Checking if you have Module::Build 0.38 ... Yes (0.4214)
+Checking if you have ExtUtils::Install 1.46 ... Yes (2.04)
+Configuring JavaScript-Value-Escape-0.07
+Running Build.PL
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'JavaScript-Value-Escape' version '0.07'
+cp META.json MYMETA.json
+cp META.yml MYMETA.yml
+-> OK
+Checking dependencies from MYMETA.json ...
+Checking if you have Test::More 0 ... Yes (1.001014)
+Building JavaScript-Value-Escape-0.07
+Building JavaScript-Value-Escape
+Building JavaScript-Value-Escape
+Installing /home/hackers/TrainingHackers/webapp/local/lib/perl5/JavaScript/Value/Escape.pm
+-> OK
+Successfully installed JavaScript-Value-Escape-0.07
+Installing /home/hackers/TrainingHackers/webapp/local/lib/perl5/x86_64-linux/.meta/JavaScript-Value-Escape-0.07/install.json
+Installing /home/hackers/TrainingHackers/webapp/local/lib/perl5/x86_64-linux/.meta/JavaScript-Value-Escape-0.07/MYMETA.json
+<== Installed dependencies for /home/hackers/TrainingHackers/webapp/. Finishing.
+Expiring 10 work directories.
+1 distribution installed

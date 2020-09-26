@@ -1,0 +1,26 @@
+{
+    "color_scheme": "Packages/User/SublimeLinter/Monokai Extended (SL).tmTheme",
+    "draw_white_space": "all",
+    "ensure_newline_at_eof_on_save": true,
+    "font_face": "Ricty Diminished Regular",
+    "font_size": 14,
+    "highlight_line": true,
+    "highlight_modified_tabs": true,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "perltidy_cmd":
+    [
+        "/Users/yk/.plenv/shims/perltidy"
+    ],
+    "rulers":
+    [
+        78
+    ],
+    "scroll_past_end": true,
+    "show_encoding": true,
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": false,
+    "word_wrap": false
+}

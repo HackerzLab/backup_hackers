@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery テスト</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+   <link rel="stylesheet" href="css/form.css">
+	<style type="text/css">
+ 	<!--
+        .landscape { border:solid 5px #CCCCCC}
+ 	-->
+ 	</style>
+</head>
+<body>
+	<img src="images/ookaede.jpg" class="landscape" id="image1">
+	<img src="images/kurinso.jpg" class="landscape" id="image2">
+
+	<form action="#" method="post" id="theForm">
+   	<!-- <form action="#" method="post" id="theForm" novalidate> -->
+        <fieldset><legend>選択メニュー</legend>
+		<div> <label for="state">カテゴリ</label><select name="selectMenu" id="selectMenu" multiple>
+				<option value="javascript">JavaScript</option> 
+				<option value="php">PHP</option> 
+				<option value="html">HTML</option> 
+				<option value="css">CSS</option>          
+			</select></div> 
+		</fieldset>
+	</form>
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		/*
+		$('img').mouseover(function(){
+			console.log('mouseover');
+		})
+		*/
+		/*
+		$('#selectMenu').change(function() {
+			console.log($(this).val());
+			console.log(this.selectedIndex);
+		});
+		*/
+		$('img').hover(
+			function(){
+				console.log('mouseover');
+			},
+			function(){
+				console.log('mouseout');
+			}
+		);
+
+	});
+	</script>
+
+	<script>
+	window.onload = function() {
+    	'use strict';
+
+    	document.getElementById('image1').onmouseover = function(){
+    		console.log(this);
+    	} 
+    }
+	</script>
+</body>
+</html>

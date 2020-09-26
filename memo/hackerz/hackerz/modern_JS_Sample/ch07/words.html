@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>英単語をソート</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <!-- Script 7.3 - words.html -->
+    <form action="#" method="post" id="theForm">
+        <fieldset><legend>英単語をソート</legend>
+            <p>下のテキスト入力に英単語を入力してください。単語は半角スペースで区切ります。ボタンとクリックすると、単語の大文字小文字の違いを吸収したソート結果が表示されます。</p>
+            <div><label for="words">単語</label><input type="text" name="words" id="words" required></div>
+            <input type="submit" value="ソート！" id="submit">
+            <h2>ソート結果</h2>
+            <div id="output"></div>
+        </fieldset>
+    </form>
+    <script src="js/words.js"></script>
+</body>
+</html>
