@@ -1,0 +1,17 @@
+: cascade layout::base
+
+: around body -> {
+  : include inc::questions::issue
+
+  <div class="container">
+    <div class="form-horizontal well">
+      <fieldset>
+        <a href="/static/images/Vol15_Q9.png" class="btn btn-primary btn-lg btn-block" download="Vol15_Q9.png">ファイルをダウンロード<br></a>
+      </fieldset>
+    </div>
+  </div>
+
+  : include inc::questions::form
+  : include inc::questions::level
+  : include inc::questions::hint
+: }

@@ -1,0 +1,17 @@
+: cascade layout::base
+
+: around body -> {
+  : include inc::questions::issue
+
+  <div class="container">
+    <div class="form-horizontal well">
+      <fieldset>
+        <a href="/static/images/HLHQuiz4.class" class="btn btn-primary btn-lg btn-block" download="HLHQuiz4.class">ファイルをダウンロード<br></a>
+      </fieldset>
+    </div>
+  </div>
+
+  : include inc::questions::form
+  : include inc::questions::level
+  : include inc::questions::hint
+: }

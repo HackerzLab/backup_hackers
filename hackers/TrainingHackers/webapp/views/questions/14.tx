@@ -1,0 +1,49 @@
+: cascade layout::base
+
+: around body -> {
+  : include inc::questions::issue
+  <div class="container">
+    <form action="/answers/<: $question_id :>" method="POST" class="form-horizontal well">
+      <fieldset>
+        <legend><span class="glyphicon glyphicon-pencil"></span>&emsp;解答を入力</legend>
+        :if $error == 1 {
+        <p class="text-warning">解答が入力されていません。</p>
+        : }
+        <div class="form-group">
+          <label class="col-lg-2 control-label">選択しよう！</label>
+          <div class="col-lg-10">
+            <div class="row">
+              <div class="radio col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <label>
+                  <input type="radio" name="user_answer" id="optionsRadios1" value="1" checked=""> 1: 北緯40度41分21.313秒 西経75度57分19.785秒
+                </label>
+              </div>
+              <div class="radio col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <label>
+                  <input type="radio" name="user_answer" id="optionsRadios2" value="2"> 2: 北緯35度42分36.5秒 東経139度48分39秒
+                </label>
+              </div>
+              <div class="radio col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <label>
+                  <input type="radio" name="user_answer" id="optionsRadios3" value="3"> 3: 北緯48度51分30秒 東経2度17分40秒
+                </label>
+              </div>
+              <div class="radio col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <label>
+                  <input type="radio" name="user_answer" id="optionsRadios4" value="4"> 4: 北緯25度11分49.7秒 東経55度16分26.8秒
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-lg-10 col-lg-offset-2">
+            <button type="submit" class="btn btn-primary" name="send" value="ボタン">送信</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  : include inc::questions::level
+  : include inc::questions::hint
+: }

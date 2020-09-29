@@ -1,0 +1,432 @@
+: cascade layout::base
+
+: around body -> {
+  <div class="container">
+    <h2 class="page-header">ハカー？？</h2>
+    <p class="well">
+    ホワイトハカーというのを知ってるかい？<br>
+    ホワイトハカーというのは悪いことをするハッカーの攻撃から身を守るためのハカー、つまり正義のハッカーの事なんだ<br>
+    今の日本ではホワイトハカーが不足しているんだ<br>
+    このイベントではホワイトハカーになるためのセンスを磨くために必要な技術を解説しようと思う<br>
+    まずはセキュリティに関する問題を解いてもらう<br>
+    おっと、学校の試験のような堅苦しい問題はないから安心して<br>
+    <br>
+    </p>
+  </div>
+
+: if $user.user_id {
+  <!-- ログイン後の画面選択 -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <h2 class="page-header">問題はこっちだ</h2>
+        <a href="/questions" class="btn btn-default btn-lg btn-block">問題をとく</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <h2 class="page-header">ログアウトはこっちだ</h2>
+        <a href="/sessions/logout" class="btn btn-default btn-lg btn-block">ログアウトする</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="container">                                                               -->
+  <!--   <h2 class="page-header">問題一覧</h2>                                           -->
+  <!--   <div class="row">                                                                   -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/1" class="btn btn-default btn-lg btn-block">第 1 問</a>   -->
+  <!--     </div>                                                                            -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/2" class="btn btn-default btn-lg btn-block">第 2 問</a>   -->
+  <!--     </div>                                                                            -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/3" class="btn btn-default btn-lg btn-block">第 3 問</a>   -->
+  <!--     </div>                                                                            -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/4" class="btn btn-default btn-lg btn-block">第 4 問</a>   -->
+  <!--     </div>                                                                            -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/5" class="btn btn-default btn-lg btn-block">第 5 問</a>   -->
+  <!--     </div>                                                                            -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/6" class="btn btn-default btn-lg btn-block">第 6 問</a>   -->
+  <!--     </div>                                                                            -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/7" class="btn btn-default btn-lg btn-block">第 7 問</a>   -->
+  <!--     </div>                                                                            -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/8" class="btn btn-default btn-lg btn-block">第 8 問</a>   -->
+  <!--     </div>                                                                            -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/9" class="btn btn-default btn-lg btn-block">第 9 問</a>   -->
+  <!--     </div>                                                                            -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/10" class="btn btn-default btn-lg btn-block">第 10 問</a> -->
+  <!--     </div>                                                                            -->
+  <!--   </div>                                                                              -->
+  <!-- </div>                                                                                -->
+
+  <!-- <div class="container">                                                               -->
+  <!--   <h2 class="page-header">問題一覧 Season 2</h2>                                  -->
+  <!--   <div class="row">                                                                   -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/11" class="btn btn-default btn-lg btn-block">第 11 問</a> -->
+  <!--     </div>                                                                            -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/12" class="btn btn-default btn-lg btn-block">第 12 問</a> -->
+  <!--     </div>                                                                            -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/13" class="btn btn-default btn-lg btn-block">第 13 問</a> -->
+  <!--     </div>                                                                            -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/14" class="btn btn-default btn-lg btn-block">第 14 問</a> -->
+  <!--     </div>                                                                            -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/15" class="btn btn-default btn-lg btn-block">第 15 問</a> -->
+  <!--     </div>                                                                            -->
+  <!--   </div>                                                                              -->
+  <!-- </div>                                                                                -->
+
+<!--   <div class="container"> -->
+<!--     <h2 class="page-header">問題一覧 Season 3</h2> -->
+<!--     <div class="row"> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+<!--         <a href="/questions/16" class="btn btn-default btn-lg btn-block">第 16 問</a> -->
+<!--       </div> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+<!--         <a href="/questions/17" class="btn btn-default btn-lg btn-block">第 17 問</a> -->
+<!--       </div> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+<!--         <a href="/questions/18" class="btn btn-default btn-lg btn-block">第 18 問</a> -->
+<!--       </div> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+<!--         <a href="/questions/19" class="btn btn-default btn-lg btn-block">第 19 問</a> -->
+<!--       </div> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+<!--         <a href="/questions/20" class="btn btn-default btn-lg btn-block">第 20 問</a> -->
+<!--       </div> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+<!--         <a href="/questions/21" class="btn btn-default btn-lg btn-block">第 21 問</a> -->
+<!--       </div> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+<!--         <a href="/questions/22" class="btn btn-default btn-lg btn-block">第 22 問</a> -->
+<!--       </div> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+<!--         <a href="/questions/23" class="btn btn-default btn-lg btn-block">第 23 問</a> -->
+<!--       </div> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+<!--         <a href="/questions/24" class="btn btn-default btn-lg btn-block">第 24 問</a> -->
+<!--       </div> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+<!--         <a href="/questions/25" class="btn btn-default btn-lg btn-block">第 25 問</a> -->
+<!--       </div> -->
+<!--     </div> -->
+<!--   </div> -->
+
+<!--   <div class="container"> -->
+<!--     <h2 class="page-header">問題一覧 Question Easy</h2> -->
+<!--     <div class="row"> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+<!--         <a href="/questions/1" class="btn btn-default btn-lg btn-block">第 1 問</a> -->
+<!--       </div> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+<!--         <a href="/questions/2" class="btn btn-default btn-lg btn-block">第 2 問</a> -->
+<!--       </div> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+<!--         <a href="/questions/3" class="btn btn-default btn-lg btn-block">第 3 問</a> -->
+<!--       </div> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+<!--         <a href="/questions/4" class="btn btn-default btn-lg btn-block">第 4 問</a> -->
+<!--       </div> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+<!--         <a href="/questions/5" class="btn btn-default btn-lg btn-block">第 5 問</a> -->
+<!--       </div> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+<!--         <a href="/questions/6" class="btn btn-default btn-lg btn-block">第 6 問</a> -->
+<!--       </div> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+<!--         <a href="/questions/7" class="btn btn-default btn-lg btn-block">第 7 問</a> -->
+<!--       </div> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+<!--         <a href="/questions/8" class="btn btn-default btn-lg btn-block">第 8 問</a> -->
+<!--       </div> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+<!--         <a href="/questions/11" class="btn btn-default btn-lg btn-block">第 11 問</a> -->
+<!--       </div> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+<!--         <a href="/questions/12" class="btn btn-default btn-lg btn-block">第 12 問</a> -->
+<!--       </div> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+<!--         <a href="/questions/16" class="btn btn-default btn-lg btn-block">第 16 問</a> -->
+<!--       </div> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+<!--         <a href="/questions/18" class="btn btn-default btn-lg btn-block">第 18 問</a> -->
+<!--       </div> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+<!--         <a href="/questions/24" class="btn btn-default btn-lg btn-block">第 24 問</a> -->
+<!--       </div> -->
+<!--     </div> -->
+<!--   </div> -->
+
+  <!-- <div class="container">                                                               -->
+  <!--   <h2 class="page-header">問題一覧 Question Season4 - Kii</h2>                    -->
+  <!--   <div class="row">                                                                   -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/26" class="btn btn-default btn-lg btn-block">第 26 問</a> -->
+  <!--     </div>                                                                            -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/27" class="btn btn-default btn-lg btn-block">第 27 問</a> -->
+  <!--     </div>                                                                            -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/28" class="btn btn-default btn-lg btn-block">第 28 問</a> -->
+  <!--     </div>                                                                            -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/29" class="btn btn-default btn-lg btn-block">第 29 問</a> -->
+  <!--     </div>                                                                            -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/30" class="btn btn-default btn-lg btn-block">第 30 問</a> -->
+  <!--     </div>                                                                            -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/31" class="btn btn-default btn-lg btn-block">第 31 問</a> -->
+  <!--     </div>                                                                            -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/32" class="btn btn-default btn-lg btn-block">第 32 問</a> -->
+  <!--     </div>                                                                            -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/33" class="btn btn-default btn-lg btn-block">第 33 問</a> -->
+  <!--     </div>                                                                            -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/34" class="btn btn-default btn-lg btn-block">第 34 問</a> -->
+  <!--     </div>                                                                            -->
+  <!--     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">                                -->
+  <!--       <a href="/questions/35" class="btn btn-default btn-lg btn-block">第 35 問</a> -->
+  <!--     </div>                                                                            -->
+  <!--   </div>                                                                              -->
+  <!-- </div>                                                                                -->
+  <div class="container">
+    <h2 class="page-header">問題一覧 Question Season6 - Kii</h2>
+    <div class="row">
+:for $questions -> $q {
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/<:$q.id:>" class="btn btn-default btn-lg btn-block">第 <:$q.id:> 問</a>
+      </div>
+:}
+<!--
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/2" class="btn btn-default btn-lg btn-block">第 2 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/3" class="btn btn-default btn-lg btn-block">第 3 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/4" class="btn btn-default btn-lg btn-block">第 4 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/5" class="btn btn-default btn-lg btn-block">第 5 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/6" class="btn btn-default btn-lg btn-block">第 6 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/7" class="btn btn-default btn-lg btn-block">第 7 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/8" class="btn btn-default btn-lg btn-block">第 8 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/9" class="btn btn-default btn-lg btn-block">第 9 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/10" class="btn btn-default btn-lg btn-block">第 10 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/11" class="btn btn-default btn-lg btn-block">第 11 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/12" class="btn btn-default btn-lg btn-block">第 12 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/13" class="btn btn-default btn-lg btn-block">第 13 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/14" class="btn btn-default btn-lg btn-block">第 14 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/15" class="btn btn-default btn-lg btn-block">第 15 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/16" class="btn btn-default btn-lg btn-block">第 16 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/17" class="btn btn-default btn-lg btn-block">第 17 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/18" class="btn btn-default btn-lg btn-block">第 18 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/19" class="btn btn-default btn-lg btn-block">第 19 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/20" class="btn btn-default btn-lg btn-block">第 20 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/21" class="btn btn-default btn-lg btn-block">第 21 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/22" class="btn btn-default btn-lg btn-block">第 22 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/23" class="btn btn-default btn-lg btn-block">第 23 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/24" class="btn btn-default btn-lg btn-block">第 24 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/25" class="btn btn-default btn-lg btn-block">第 25 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/26" class="btn btn-default btn-lg btn-block">第 26 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/27" class="btn btn-default btn-lg btn-block">第 27 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/28" class="btn btn-default btn-lg btn-block">第 28 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/29" class="btn btn-default btn-lg btn-block">第 29 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/30" class="btn btn-default btn-lg btn-block">第 30 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/31" class="btn btn-default btn-lg btn-block">第 31 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/32" class="btn btn-default btn-lg btn-block">第 32 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/33" class="btn btn-default btn-lg btn-block">第 33 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/34" class="btn btn-default btn-lg btn-block">第 34 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/35" class="btn btn-default btn-lg btn-block">第 35 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/36" class="btn btn-default btn-lg btn-block">第 36 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/37" class="btn btn-default btn-lg btn-block">第 37 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/38" class="btn btn-default btn-lg btn-block">第 38 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/39" class="btn btn-default btn-lg btn-block">第 39 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/40" class="btn btn-default btn-lg btn-block">第 40 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/41" class="btn btn-default btn-lg btn-block">第 41 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/42" class="btn btn-default btn-lg btn-block">第 42 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/43" class="btn btn-default btn-lg btn-block">第 43 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/44" class="btn btn-default btn-lg btn-block">第 44 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/45" class="btn btn-default btn-lg btn-block">第 45 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/46" class="btn btn-default btn-lg btn-block">第 46 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/47" class="btn btn-default btn-lg btn-block">第 47 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/48" class="btn btn-default btn-lg btn-block">第 48 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/49" class="btn btn-default btn-lg btn-block">第 49 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/50" class="btn btn-default btn-lg btn-block">第 50 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/51" class="btn btn-default btn-lg btn-block">第 51 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/52" class="btn btn-default btn-lg btn-block">第 52 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/53" class="btn btn-default btn-lg btn-block">第 53 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/54" class="btn btn-default btn-lg btn-block">第 54 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/55" class="btn btn-default btn-lg btn-block">第 55 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/56" class="btn btn-default btn-lg btn-block">第 56 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/57" class="btn btn-default btn-lg btn-block">第 57 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/58" class="btn btn-default btn-lg btn-block">第 58 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/59" class="btn btn-default btn-lg btn-block">第 59 問</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="/questions/60" class="btn btn-default btn-lg btn-block">第 60 問</a>
+      </div>
+-->
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h2 class="page-header">自分の解答一覧はこっちだ</h2>
+        <a href="/user_answers" class="btn btn-default btn-lg btn-block">自分の解答一覧</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h2 class="page-header">ランキングはこっちだ</h2>
+        <a href="/rankings" class="btn btn-default btn-lg btn-block">総合ランキング</a>
+      </div>
+    </div>
+  </div>
+
+: } else {
+  <!-- 会員登録入力 -->
+  <div class="container">
+    <h2 class="page-header">まずは会員登録をしよう</h2>
+    <p class="well">
+      この会員は今回だけのもので、終わったらデータはすべて破棄するから安心して！
+    </p>
+    <a href="/users" class="btn btn-default btn-lg btn-block">登録する</a>
+  </div>
+
+  <div class="container">
+    <h2 class="page-header">ログイン</h2>
+    <p class="well">
+      会員登録が終わった人はログインしよう！
+    </p>
+    <a href="/sessions" class="btn btn-default btn-lg btn-block">ログインする</a>
+  </div>
+: }
+
+: }

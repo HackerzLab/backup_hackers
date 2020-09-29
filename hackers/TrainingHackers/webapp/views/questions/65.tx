@@ -1,0 +1,54 @@
+: cascade layout::base
+
+: around body -> {
+  : include inc::questions::issue
+  <div class="container">
+    <form action="/answers/<: $question_id :>" method="POST" class="form-horizontal well">
+      <fieldset>
+        <legend><span class="glyphicon glyphicon-pencil"></span>&emsp;解答を入力</legend>
+        :if $error == 1 {
+        <p class="text-warning">解答が入力されていません。</p>
+        : }
+        <div class="form-group">
+          <label class="col-lg-2 control-label">選択しよう！</label>
+          <div class="col-lg-10">
+            <div class="row">
+              <div class="radio col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <label>
+                  <input type="radio" name="user_answer" id="optionsRadios1" value="1" checked=""> 1: 入力が一つ以上"賛成"のときは常に，"賛成"と出力する。
+                </label>
+              </div>
+              <div class="radio col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <label>
+                  <input type="radio" name="user_answer" id="optionsRadios2" value="2"> 2: 入力が二つ以上"賛成"のときは常に，"賛成"と出力する。
+                </label>
+              </div>
+              <div class="radio col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <label>
+                  <input type="radio" name="user_answer" id="optionsRadios3" value="3"> 3: 入力が二つ以上"反対"のときだけ，"反対"と出力する。
+                </label>
+              </div>
+              <div class="radio col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <label>
+                  <input type="radio" name="user_answer" id="optionsRadios4" value="4"> 4: 入力が三つとも"賛成"のときだけ，"賛成"と出力する。
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-lg-10 col-lg-offset-2">
+            <button type="submit" class="btn btn-primary" name="send" value="ボタン">送信</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+    <div class="form-horizontal well">
+      <fieldset>
+        <img src="/static/images/ip_26_s_57.PNG"><br>
+      </fieldset>
+    </div>
+  </div>
+  : include inc::questions::level
+  : include inc::questions::hint
+: }
